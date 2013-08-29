@@ -16,4 +16,18 @@ describe('a quiz', function() {
     expect(QUIZ_TOPICS).toContain('javascript');
   });
 
+
+  it('finds the difference of the largest and second largest', function(){
+    var a = [9, 20, 11, 12];
+    expect(bigDiff(a)).toEqual(8);
+  });
+
+
+  it('returns the average of the middle two or three numbers', function(){
+    var a = [2, 6, 9, 11];
+    expect(averageMedian(a)).toEqual(7.5);
+  });
+
+
+
 });
